@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	<meta charset="uft-8">
+    <link rel="stylesheet" href="des.css">
+	</head>
+	<body>
+    <div class="title">
+		<h1>ジョークで英語学習</h1>
+        <p>文字をクリックして並べ替えよう！</p>
+        <p>合っている所は水色、間違えている所は赤になるよ</p>
+        <p>参考：<a href="https://icanhazdadjoke.com/api">https://icanhazdadjoke.com/api</a></p>
+	</div>
+    <div class="ct"><p>翻訳(直訳)：　<span id="trans"></span></div>
+    <div id="p_ans" class="main ct">
+        <p id="lk"></p>
+    </div>
+    <div class="ct"><p id="lk"></p></div>
+    <div class="text_frame">
+    <div>
+    <div id="sel"  class="main ct">
+
+    </div>
+    <div class="ct">
+        <button onclick="ans_j(false)" id="jd">判定</button>
+        <button onclick="create_q(true)" id="jd">やりなおし</button>
+        <button onclick="ans_j(true)" id="jd">あきらめる</button>
+    </div>
+    <div class="text_frame">
+			<h1>成績</h1>
+		</div>
+    <div>
+    <div class="main">
+        <h2>正解数：　<span id="clear"></span>　回</h2>
+        <button onclick="if(window.confirm('データを削除しますか？'))Wipe();">データ削除</button>
+    </div>
+    <script src="main.js"></script>
+    </body>
